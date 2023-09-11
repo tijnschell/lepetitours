@@ -8,12 +8,19 @@
 <div class="content">
 <h1>La Petit Ours</h1>
 <p>Hi! This is the first try of making a website for the beautiful holiday home in the Creuse. </p>
+<p>What do you call a fish with no eyes</p>
+<button id='tryout'>Want to know?</button>
+<p id='answer'></p>
 
 </div>
 <script>
   fetch('navigation.html')
     .then(response => response.text())
     .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+
+  document.getElementById("demo").onclick = function() {
+    document.getElementById("answer").innerHTML = "a fsh";
+  };
 </script>
 </body>
 </html>
